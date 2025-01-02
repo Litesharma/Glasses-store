@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+.main{
+    height: 100%;
+    width: 100%;
+}
+.nav{
+    height: 20%;
+    /* background-color: yellow; */
+}
+.nav-1{
+    /* background-color: green; */
+    display: grid;
+    grid-template-columns: 63% 8% 10% 6% 7% 5%;
+    align-items: center;
+    padding: 27px 28px;
+}
+.nav-1 h4, .nav-2 h4{
+    font-weight: 500;
+}
+.nav-1 h4 span{
+    color: rgb(174, 175, 175);
+    margin-left: 10px;
+}
+.circle{
+    display: flex;
+    gap: 5px;
+}
+.c-1{
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+.nav-2{
+    /* background-color: red ; */
+    display: grid;
+    grid-template-columns: 6% 7% 9% 9% 9% 9% 10% 30%;
+    justify-items: center;
+    padding-top: 16px;
+    
+}
+.nav-2 h4{
+    font-size: 14px;
+}
+.content{
+    height: 80%;
+    width: 100%;
+    /* background: blue; */
+}
+.text-content{
+    /* background-color: pink; */
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.text-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 5px;
+    
+}
+.text-content::-webkit-scrollbar-thumb{
+    background-color: orangered;
+    border-radius: 10px;
+    
+}
+.elem{
+    /* background-color: red; */
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-shrink: 0;
+}
+.elem h2{
+    font-size: 100px;
+    font-weight: 300;
+}
+.img-content{
+    background-color: purple;
+    height: 60%;
+    width: 100%;
+    /* overflow: hidden; */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.img-content::-webkit-scrollbar{
+    display: none;
+}
+.img-content img{
+    height: 100%;
+    width: 100%;
+    background-color: blueviolet;
+    object-fit: cover;
+    object-position: 0 25%;
+    flex-shrink: 0;
+}
+.img-content :nth-child(2){
+    object-position: 0 10%;
+}
+.img-content :nth-child(3){
+    object-position: 0 35%;
+}
+.img-content :nth-child(4){
+    object-position: 0 53%;
+}
